@@ -79,9 +79,15 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 .urgency-when{background:rgba(34,197,94,.1);color:var(--green)}
 .disclaimer{font-size:.78rem;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px 20px;margin-top:32px;line-height:1.75}
 footer{text-align:center;padding:40px 24px;border-top:1px solid var(--border);font-size:.82rem;color:var(--muted)}
+.table-wrapper { width: 100%; overflow-x: auto; border-radius: var(--r); margin-bottom: 24px; border: 1px solid var(--border); }
+.spectrum { width: 100%; border-collapse: collapse; border: none; min-width: 600px; }
 @media(max-width:700px){
   .verdict-banner,.actions{grid-template-columns:1fr}
   .v-header{flex-direction:column}
+  .hero { padding: 48px 20px 40px; }
+  .hero h1 { font-size: 2.5rem; }
+  .wrap { padding: 0 20px 60px; }
+  .violation { padding: 20px; }
 }
 </style>
 </head>
@@ -261,6 +267,7 @@ footer{text-align:center;padding:40px 24px;border-top:1px solid var(--border);fo
     <h2>The Full Legal Spectrum &mdash; Civil to Criminal</h2>
   </div>
   <div class="divider"></div>
+  <div class="table-wrapper">
   <table class="spectrum">
     <thead>
       <tr>
@@ -300,6 +307,7 @@ footer{text-align:center;padding:40px 24px;border-top:1px solid var(--border);fo
       </tr>
     </tbody>
   </table>
+  </div>
 
   <div class="sec-head" style="margin-top:60px">
     <div class="sec-icon">&#9889;</div>
